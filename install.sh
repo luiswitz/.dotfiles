@@ -29,3 +29,14 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# create and move vim files to vim foler
+echo "Creating vim folder"
+mkdir -p ~/.vim
+echo "...done"
+
+echo "copying the vim files to .vim dir"
+VIM_FOLDER=vim/*
+for vim_file in $VIM_FOLDER; do
+  cp $vim_file ~/.vim/
+done
