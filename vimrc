@@ -46,6 +46,12 @@ inoremap JJ <esc>
 nnoremap <leader>s :w<cr>
 nnoremap <leader>S :w<cr>
 
+" new tab
+nnoremap <c-w>t :tabnew<cr>
+
+" Rubocop
+autocmd FileType ruby nnoremap <buffer> <leader>cs  :call RubocopFixCs()<cr>
+
 if has("mac")
   let g:gist_clip_command = 'pbcopy'
 elseif has("unix")
@@ -217,3 +223,33 @@ endif
 
 " execute file
 noremap <silent> <leader>e :execute '!./%'<CR>
+
+" functions
+
+function! RubocopFixCs()
+  let command = "bundle exec rubocop -a " . expand('%')
+  call ClearEchoAndExecute(command)
+endfunction
+
+function! ClearEchoAndExecute(command)
+  if has('nvim')
+    -tabnew
+    call termopen(a:command)
+    startinsert
+    return
+  endif
+
+  let message = '.editor/project.vim => ' . a:command
+  let command = "echo -e '" . message . "' && " . a:command
+  echo command
+
+  if has('nvim')
+    -tabnew
+    call termopen(command)
+    startinsert
+    return
+  endif
+
+  let command = '! clear && ' . command
+  execute command
+endfunction
