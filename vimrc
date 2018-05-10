@@ -222,9 +222,7 @@ if filereadable(expand("~/.vimrc_background"))
 endif
 
 " execute file
-noremap <silent> <leader>e :execute '!./%'<CR>
-
-" functions
+noremap <silent> <leader>e :execute '!clear && ./%'<CR>
 
 function! RubocopFixCs()
   let command = "bundle exec rubocop -a " . expand('%')
