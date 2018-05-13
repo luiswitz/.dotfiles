@@ -199,8 +199,8 @@ nnoremap <silent> <leader>l :TestLast<CR>
 nnoremap <silent> <leader>g :TestVisit<CR>
 
 " adapt test for docker-compose
-noremap <silent> <leader>d :execute '!docker-compose run --rm app bundle exec rspec %:'.line(".")<CR>
-noremap <silent> <leader>D :execute '!docker-compose run --rm app bundle exec rspec %'<CR>
+noremap <silent> <leader>d :call DockerTestNearest()<CR>
+noremap <silent> <leader>D :call DockerTestFile()<CR>
 
 " git blame
 " noremap <silent> <leader>gb :execute '!git blame %:'.line(".")<CR>
@@ -223,6 +223,16 @@ endif
 
 " execute file
 noremap <silent> <leader>e :execute '!clear && ./%'<CR>
+
+function! DockerTestNearest()
+  let command = "docker-compose run --rm app bundle exec rspec %:".line(".")
+  call ClearEchoAndExecute(command)
+endfunction
+
+function! DockerTestFile()
+  let command = "docker-compose run --rm app bundle exec rspec %"
+  call ClearEchoAndExecute(command)
+endfunction
 
 function! RubocopFixCs()
   let command = "bundle exec rubocop -a " . expand('%')
