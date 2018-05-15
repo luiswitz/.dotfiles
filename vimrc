@@ -202,6 +202,9 @@ nnoremap <silent> <leader>g :TestVisit<CR>
 noremap <silent> <leader>d :call DockerTestNearest()<CR>
 noremap <silent> <leader>D :call DockerTestFile()<CR>
 
+" git
+noremap <silent> <leader>gl :call GitLog()<CR>
+
 " git blame
 " noremap <silent> <leader>gb :execute '!git blame %:'.line(".")<CR>
 
@@ -223,6 +226,10 @@ endif
 
 " execute file
 noremap <silent> <leader>e :execute '!clear && ./%'<CR>
+
+function! GitLog()
+  execute "!git log"
+endfunction
 
 function! DockerTestNearest()
   let command = "docker-compose run --rm app bundle exec rspec %:".line(".")
