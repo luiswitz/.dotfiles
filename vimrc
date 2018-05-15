@@ -204,6 +204,7 @@ noremap <silent> <leader>D :call DockerTestFile()<CR>
 
 " git
 noremap <silent> <leader>gl :call GitLog()<CR>
+noremap <silent> <leader>gb :Gblame<CR>
 
 " git blame
 " noremap <silent> <leader>gb :execute '!git blame %:'.line(".")<CR>
