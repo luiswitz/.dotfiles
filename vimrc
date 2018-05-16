@@ -233,12 +233,12 @@ function! GitLog()
 endfunction
 
 function! DockerTestNearest()
-  let command = "docker-compose run --rm app bundle exec rspec %:".line(".")
+  let command = "docker-compose run --rm app bundle exec rspec " . expand('%:~:.') . ":" . line(".")
   call ClearEchoAndExecute(command)
 endfunction
 
 function! DockerTestFile()
-  let command = "docker-compose run --rm app bundle exec rspec %"
+  let command = "docker-compose run --rm app bundle exec rspec ". expand('%:~:.')
   call ClearEchoAndExecute(command)
 endfunction
 
