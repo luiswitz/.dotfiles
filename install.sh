@@ -40,3 +40,10 @@ VIM_FOLDER=vim/*
 for vim_file in $VIM_FOLDER; do
   cp $vim_file ~/.vim/
 done
+
+# Dependencies
+echo "Installing Vundle"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || echo "Vundle already installed"
+
+# Installing vim plugins
+vim +PluginInstall +qall
