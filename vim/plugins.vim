@@ -41,6 +41,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'phpactor/phpactor'
 Plugin 'rizzatti/dash.vim'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
