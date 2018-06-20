@@ -15,6 +15,7 @@ set cc=80
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set noswapfile
 
 nnoremap <Left> :echo "No left for you!"<CR>
 vnoremap <Left> :<C-u>echo "No left for you!"<CR>
