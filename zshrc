@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 alias start_be="REACT_ON_RAILS_ENV=hot PORT=3000 bundle exec rails s -b 0.0.0.0"
 alias start_fe="REACT_ON_RAILS_ENV=hot npm run hot"
 
+# new rails app with docker
+alias docker-rails-new='docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle' 
+
 alias ipxing="ifconfig | grep 172 | awk '{print $2}'"
 
 ## git aliases
