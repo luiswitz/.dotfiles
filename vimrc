@@ -230,3 +230,6 @@ endif
 " execute file
 noremap <silent> <leader>e :execute '!clear && ./%'<CR>
 nnoremap <leader>st <esc>:! clear && ./tmp/curl.sh<cr>
+
+" Argument rewrap
+nnoremap <leader>wa :call argumentrewrap#RewrapArguments()<CR>
