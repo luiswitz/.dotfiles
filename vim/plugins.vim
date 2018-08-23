@@ -43,6 +43,7 @@ Plugin 'phpactor/phpactor'
 Plugin 'rizzatti/dash.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'jakobwesthoff/argumentrewrap'
+Plugin 'keith/rspec.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
