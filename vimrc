@@ -87,12 +87,6 @@ nnoremap <silent> <leader>F :nohlsearch<CR>
 autocmd FileType ruby nnoremap <leader>ccs :RuboCop<cr>
 autocmd FileType ruby nnoremap <leader>av :OpenAlternate<cr>
 
-" Ctrl p
-"let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-"if executable('ag')
-"  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-"endif
-
 " fzf
 nnoremap <C-p> :Files<CR>
 
@@ -111,8 +105,6 @@ set autoindent
 set guicursor=i:ver25-iCursor-blinkon200-blinkoff200-blinkwait2000
 set guicursor=n:ver25-iCursor
 
-"color dracula
-"color jellybeans
 color base16-tomorrow
 
 "GitGutterEnable
@@ -130,34 +122,9 @@ endif
 "NerdTree
 let g:NERDTreeMouseMode=3
 
-" NERDTress File highlighting
-let s:brown = "905532"
-let s:aqua =  "3AFFDB"
-let s:blue = "689FB6"
-let s:darkBlue = "44788E"
-let s:purple = "834F79"
-let s:lightPurple = "834F79"
-let s:red = "AE403F"
-let s:beige = "F5C06F"
-let s:yellow = "F09F17"
-let s:orange = "D4843E"
-let s:darkOrange = "F16529"
-let s:pink = "CB6F6F"
-let s:salmon = "EE6E73"
-let s:green = "8FAA54"
-let s:lightGreen = "31B53E"
-let s:white = "FFFFFF"
-let s:rspec_red = 'FE405F'
-let s:git_orange = 'F54D27'
-
-let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
-let g:NERDTreeExtensionHighlightColor['scss'] = s:blue " sets the color of css files to blue
-
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-
-hi Directory guifg=#FF0000 ctermfg=green
 
 let g:deoplete#enable_at_startup = 1
 if !exists('g:deoplete#omni#input_patterns')
