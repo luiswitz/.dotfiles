@@ -42,6 +42,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'keith/rspec.vim'
 Plugin 'mhartington/oceanic-next'
+Plugin 'ekalinin/Dockerfile.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
