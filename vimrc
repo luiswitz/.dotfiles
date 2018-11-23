@@ -93,7 +93,8 @@ nnoremap <C-p> :Files<CR>
 filetype plugin indent on    " required
 
 set laststatus=2
-let g:airline_theme='bubblegum'
+" let g:airline_theme='bubblegum'
+let g:airline_theme='dracula'
 let g:airline_powerline_fonts=1
 let g:Powerline_symbols='unicode'
 
@@ -105,7 +106,8 @@ set autoindent
 set guicursor=i:ver25-iCursor-blinkon200-blinkoff200-blinkwait2000
 set guicursor=n:ver25-iCursor
 
-color base16-tomorrow
+" color base16-tomorrow
+color dracula
 
 "GitGutterEnable
 let g:gitgutter_realtime=0
@@ -189,10 +191,10 @@ autocmd FileType ruby nnoremap <leader>ccs :RuboCop<cr>
 nnoremap <silent> <leader>F :nohlsearch<CR>
 
 " base 16 color
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+" if filereadable(expand("~/.vimrc_background"))
+"   let base16colorspace=256
+"   source ~/.vimrc_background
+" endif
 
 " execute file
 noremap <silent> <leader>e :execute '!clear && ./%'<CR>
@@ -200,3 +202,7 @@ nnoremap <leader>st <esc>:! clear && ./shell_test.sh<cr>
 
 " Argument rewrap
 nnoremap <leader>wa :call argumentrewrap#RewrapArguments()<CR>
+
+" jsx syntax highlight on js files
+let g:jsx_ext_required = 0
+let g:jsx_pragma_required = 0
