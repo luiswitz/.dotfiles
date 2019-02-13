@@ -43,6 +43,7 @@ Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'keith/rspec.vim'
 Plugin 'mhartington/oceanic-next'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'git://github.com/ErichDonGubler/vim-sublime-monokai'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

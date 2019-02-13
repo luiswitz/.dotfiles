@@ -94,7 +94,7 @@ filetype plugin indent on    " required
 
 set laststatus=2
 " let g:airline_theme='bubblegum'
-let g:airline_theme='dracula'
+let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts=1
 let g:Powerline_symbols='unicode'
 
@@ -107,7 +107,7 @@ set guicursor=i:ver25-iCursor-blinkon200-blinkoff200-blinkwait2000
 set guicursor=n:ver25-iCursor
 
 " color base16-tomorrow
-color dracula
+color sublimemonokai
 
 "GitGutterEnable
 let g:gitgutter_realtime=0
