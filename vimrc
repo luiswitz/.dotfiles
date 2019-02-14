@@ -206,3 +206,7 @@ nnoremap <leader>wa :call argumentrewrap#RewrapArguments()<CR>
 " jsx syntax highlight on js files
 let g:jsx_ext_required = 0
 let g:jsx_pragma_required = 0
+
+" custom ruby variable colors for monokai theme
+hi rubyInstanceVariable ctermfg=214 ctermbg=NONE cterm=NONE guifg=#ffaff0 guibg=NONE gui=NONE
+hi rubyGlobalVariable ctermfg=214 ctermbg=NONE cterm=NONE guifg=#ffaff0 guibg=NONE gui=NONE
