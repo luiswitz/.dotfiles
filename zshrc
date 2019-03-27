@@ -127,3 +127,7 @@ alias gdl="git diff HEAD^ HEAD"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Prevent weid behavior on NERDTree
+export LC_ALL=en_US.utf-8 
+export LANG="$LC_ALL" 
