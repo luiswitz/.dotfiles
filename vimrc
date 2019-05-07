@@ -198,7 +198,12 @@ nnoremap <silent> <leader>F :nohlsearch<CR>
 
 " execute file
 noremap <silent> <leader>e :execute '!clear && ./%'<CR>
+
+" execute shell test file
 nnoremap <leader>st <esc>:! clear && ./shell_test.sh<cr>
+
+" execute js file
+autocmd FileType javascript.jsx noremap<buffer> <leader>e :execute '!clear && /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc ./%'<CR>
 
 " Argument rewrap
 nnoremap <leader>wa :call argumentrewrap#RewrapArguments()<CR>

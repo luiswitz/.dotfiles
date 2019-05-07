@@ -131,3 +131,5 @@ export NVM_DIR="$HOME/.nvm"
 # Prevent weid behavior on NERDTree
 export LC_ALL=en_US.utf-8 
 export LANG="$LC_ALL" 
+
+alias js="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
