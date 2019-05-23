@@ -92,11 +92,15 @@ nnoremap <C-p> :Files<CR>
 
 filetype plugin indent on    " required
 
-set laststatus=2
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+set cmdheight=1
+" set laststatus=2
 " let g:airline_theme='bubblegum'
-let g:airline_theme='bubblegum'
-let g:airline_powerline_fonts=1
-let g:Powerline_symbols='unicode'
+" let g:airline_powerline_fonts=1
+" let g:Powerline_symbols='unicode'
 
 set number
 
