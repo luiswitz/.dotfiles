@@ -97,8 +97,7 @@ set noruler
 set laststatus=0
 set noshowcmd
 set cmdheight=1
-" set laststatus=2
-" let g:airline_theme='bubblegum'
+
 " let g:airline_powerline_fonts=1
 " let g:Powerline_symbols='unicode'
 
@@ -110,8 +109,7 @@ set autoindent
 set guicursor=i:ver25-iCursor-blinkon200-blinkoff200-blinkwait2000
 set guicursor=n:ver25-iCursor
 
-" color base16-tomorrow
-color sublimemonokai
+color dracula
 
 "GitGutterEnable
 let g:gitgutter_realtime=0

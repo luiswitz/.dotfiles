@@ -135,3 +135,12 @@ export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL" 
 
 alias js="/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc"
+
+# MySQL client
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/mysql-client/lib/pkgconfig"
+export LDFLAGS="-L/usr/local/opt/mysql-client/lib"
+export CPPFLAGS="-I/usr/local/opt/mysql-client/include"
+
+# added by travis gem
+[ -f /Users/lwitz/.travis/travis.sh ] && source /Users/lwitz/.travis/travis.sh

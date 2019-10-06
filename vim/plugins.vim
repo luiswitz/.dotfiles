@@ -5,6 +5,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'dracula/vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -15,6 +16,7 @@ Plugin 'jakobwesthoff/argumentrewrap'
 Plugin 'janko-m/vim-test'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'jparise/vim-graphql'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plugin 'junegunn/fzf.vim'
 Plugin 'keith/rspec.vim'
@@ -32,20 +34,6 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-repeat'
 Plugin 'uptech/vim-open-alternate'
 Plugin 'vim-ruby/vim-ruby'
-
-" Not used plugins
-" Plugin 'bling/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'dracula/vim'
-" Plugin 'kchmck/vim-coffee-script'
-" Plugin 'NLKNguyen/papercolor-theme'
-" Plugin 'chriskempson/base16-vim'
-" Plugin 'elixir-editors/vim-elixir'
-" Plugin 'slim-template/vim-slim.git'
-" Plugin 'nanotech/jellybeans.vim'
-" Plugin 'jonathanfilip/vim-lucius'
-" Plugin 'phpactor/phpactor'
-" Plugin 'mhartington/oceanic-next'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
