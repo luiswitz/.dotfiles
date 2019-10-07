@@ -5,7 +5,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'dracula/vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -25,6 +24,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'pangloss/vim-javascript'
+Plugin 'phanviet/vim-monokai-pro'
 Plugin 'rizzatti/dash.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'

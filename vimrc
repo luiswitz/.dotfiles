@@ -5,6 +5,10 @@ set t_Co=256
 set wildmenu
 set ttimeoutlen=50
 
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 let mapleader=" "
 set nocursorline
 set hlsearch
@@ -109,7 +113,7 @@ set autoindent
 set guicursor=i:ver25-iCursor-blinkon200-blinkoff200-blinkwait2000
 set guicursor=n:ver25-iCursor
 
-color dracula
+color sublimemonokai
 
 "GitGutterEnable
 let g:gitgutter_realtime=0
