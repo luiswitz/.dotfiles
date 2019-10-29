@@ -113,7 +113,8 @@ set autoindent
 set guicursor=i:ver25-iCursor-blinkon200-blinkoff200-blinkwait2000
 set guicursor=n:ver25-iCursor
 
-color sublimemonokai
+" color sublimemonokai
+colorscheme OceanicNext
 
 "GitGutterEnable
 let g:gitgutter_realtime=0
@@ -134,15 +135,15 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-let g:deoplete#enable_at_startup = 1
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
+" let g:deoplete#enable_at_startup = 1
+" if !exists('g:deoplete#omni#input_patterns')
+"   let g:deoplete#omni#input_patterns = {}
+" endif
 " let g:deoplete#disable_auto_complete = 1
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+" autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " deoplete tab-complete
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " ruby
 let g:rubycomplete_buffer_loading = 1
@@ -221,3 +222,9 @@ let g:jsx_pragma_required = 0
 " custom ruby variable colors for monokai theme
 hi rubyInstanceVariable ctermfg=214 ctermbg=NONE cterm=NONE guifg=#FD971F guibg=NONE gui=NONE
 hi rubyGlobalVariable ctermfg=214 ctermbg=NONE cterm=NONE guifg=#FD971F guibg=NONE gui=NONE
+
+" Remove dotted lines from divisions
+set fillchars+=vert:│
+
+" Remove default ~
+hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
