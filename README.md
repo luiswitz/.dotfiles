@@ -1,3 +1,3 @@
 # My .dotfiles
 
-This is a WIP repository
+This repository is deprecated and no longer maintained
